@@ -90,6 +90,10 @@
 .header_sci_1_0_0__dropdown ul li:hover a {
   color: #0056a4;
 }
+.header_sci_1_0_0--active:hover {
+  background: rgb(35, 134, 199);
+  transition: all 0.3s linear;
+}
 .header_sci_1_0_0__item:hover .header_sci_1_0_0__dropdown {
   display: flex;
 }

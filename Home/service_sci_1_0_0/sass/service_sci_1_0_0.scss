@@ -1,0 +1,104 @@
+.service_sci_1_0_0 {
+    padding: 40px 0;
+    &__title {
+        font-size: 26px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        color: #2386C7;
+        margin-bottom: 20px;
+    }
+    &__box {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__item {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(1);
+            transition: all 0.2s linear;
+        }
+        p {
+            min-height: 146px;
+            padding: 10px;
+            color: #fff;
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            font-size: 42px;
+            text-transform: uppercase;
+            font-weight: 600;
+            background: rgba(0, 132, 227, 0.65);
+            transition: all 0.2s linear;
+        }
+        &:hover {
+            img {
+                filter: grayscale(0);
+            }
+            p {
+                transform: translateY(100%);
+            }
+        }
+    }
+    @media(max-width: 1440px) {
+        &__box {
+            width: 85%;
+            margin: 0 auto;
+        }
+        &__item {
+            p {
+                font-size: 38px;
+            }
+        }
+    }
+    @media (max-width:1180px) {
+        &__box {
+            width: 100%;
+        }
+        &__item {
+            p {
+                font-size: 31px;
+                min-height: 115px;
+            }
+        }
+    }
+    @media(max-width: 767px) {
+        padding: 30px 0;
+        &__title {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        &__box {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        &__item {
+            width: 47%;
+            p {
+                font-size: 20px;
+                min-height: 80px;
+            }
+        }
+    }
+    @media(max-width: 320px) {
+        &__box {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        &__item {
+            width: 48%;
+            p {
+                font-size: 14px;
+                min-height: 60px;
+            }
+        }
+    }
+}

@@ -14,3 +14,20 @@ menuItem.forEach((item) => {
     item.classList.toggle("open");
   });
 });
+
+window.onscroll = () => {
+  scrollFunction();
+};
+
+const scrollFunction = () => {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    document.getElementsByClassName("header_sci_1_0_0")[0].style.background =
+      "rgb(35 134 199)";
+  } else if (
+    document.body.scrollTop < 90 ||
+    document.documentElement.scrollTop < 90
+  ) {
+    document.getElementsByClassName("header_sci_1_0_0")[0].style.background =
+      "rgba(35, 134, 199, 0.2901960784)";
+  }
+};

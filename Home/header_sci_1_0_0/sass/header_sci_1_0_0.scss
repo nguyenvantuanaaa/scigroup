@@ -89,7 +89,10 @@
             }
         }
     }
-
+    &--active:hover {
+        background: rgb(35 134 199);
+        transition: all 0.3s linear;
+    }
     &__item:hover {
         .header_sci_1_0_0__dropdown {
             display: flex;
