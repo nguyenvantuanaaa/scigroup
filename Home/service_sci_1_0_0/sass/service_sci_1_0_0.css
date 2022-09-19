@@ -1,12 +1,12 @@
 .service_sci_1_0_0 {
-  padding: 40px 0;
+  padding: 15px 0;
 }
 .service_sci_1_0_0__title {
   font-size: 26px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
-  color: #2386C7;
+  color: #2386c7;
   margin-bottom: 20px;
 }
 .service_sci_1_0_0__box {
@@ -61,8 +61,13 @@
     width: 100%;
   }
   .service_sci_1_0_0__item p {
-    font-size: 31px;
+    font-size: 30px;
     min-height: 115px;
+  }
+}
+@media (max-width: 820px) {
+  .service_sci_1_0_0__item p {
+    font-size: 21px;
   }
 }
 @media (max-width: 767px) {
