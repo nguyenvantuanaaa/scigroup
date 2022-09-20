@@ -1,5 +1,5 @@
 .service_sci_1_0_0 {
-    padding: 15px 0;
+    padding: 20px 0;
     &__title {
         font-size: 26px;
         text-transform: uppercase;
@@ -25,7 +25,7 @@
             transition: all 0.2s linear;
         }
         p {
-            min-height: 146px;
+            min-height: 120px;
             padding: 10px;
             color: #fff;
             margin: 0;
@@ -33,7 +33,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            font-size: 42px;
+            font-size: 36px;
             text-transform: uppercase;
             font-weight: 600;
             background: rgba(0, 132, 227, 0.65);
@@ -55,7 +55,7 @@
         }
         &__item {
             p {
-                font-size: 38px;
+                font-size: 28px;
             }
         }
     }
@@ -65,7 +65,7 @@
         }
         &__item {
             p {
-                font-size: 30px;
+                font-size: 26px;
                 min-height: 115px;
             }
         }
