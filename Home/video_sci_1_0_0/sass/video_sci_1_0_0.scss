@@ -1,5 +1,5 @@
 .video_sci_1_0_0 {
-    padding: 20px 0;
+    padding: 15px 0;
     &__pic {
         background-color: #01446b;
         overflow: hidden;
@@ -9,11 +9,8 @@
             opacity: 55%;
             display: block;
             transition: all 0.2s linear;
+            filter: grayscale(1);
         }
-        img:hover {
-            transform: scale(1.03);
-        }
-
         &::after {
             content: "";
             position: absolute;
@@ -28,24 +25,37 @@
             opacity: 1;
         }
     }
-
+    &__pic:hover {
+        img {
+            transform: scale(1.03);
+            filter: grayscale(0);
+            opacity: 80%;
+        }
+    }
+    &__box {
+        position: relative;
+    }
     &__text {
         position: absolute;
-        top: 10px;
+        top: 20px;
         left: 100px;
         padding: 0 15px;
-        font-size: 23px;
         color: #fff;
         font-weight: 100;
         border-left: 3px solid #fff;
-
+        transition: all 0.2s linear;
+        font-size: 20px;
         b {
             font-weight: 600;
+            font-size: 23px;
         }
     }
     @media (max-width: 1180px) {
         &__text {
-            font-size: 20px;
+            font-size: 17px;
+            b {
+                font-size: 20px;
+            }
         }
         &__pic {
             &::after {

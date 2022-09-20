@@ -59,6 +59,10 @@
   border: 1px solid #fff;
   border-radius: 20px;
   padding: 10px 30px;
+  transition: all 0.2s linear;
+}
+.recruit_sci_1_0_0__regist:hover {
+  background-color: rgba(35, 134, 199, 0.59);
 }
 .recruit_sci_1_0_0__regist a {
   color: #fff;
@@ -162,7 +166,7 @@
     margin-bottom: 10px;
   }
   .recruit_sci_1_0_0__tab2 img {
-    width: 30%;
+    width: 25%;
     display: block;
     height: auto;
   }

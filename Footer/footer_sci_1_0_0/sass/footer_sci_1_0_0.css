@@ -20,7 +20,7 @@
   width: 30%;
 }
 .footer_sci_1_0_0__info {
-  width: 40%;
+  width: 62%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -74,7 +74,7 @@
 }
 .footer_sci_1_0_0__right img {
   height: auto;
-  width: 100%;
+  width: 90%;
   display: block;
 }
 @media (max-width: 1440px) {
@@ -124,11 +124,15 @@
   }
 }
 @media (max-width: 767px) {
+  .footer_sci_1_0_0__office {
+    width: 85%;
+  }
   .footer_sci_1_0_0__top {
     flex-wrap: wrap;
   }
   .footer_sci_1_0_0__logo {
     width: 100%;
+    text-align: center;
   }
   .footer_sci_1_0_0__logo img {
     width: 40%;
@@ -147,6 +151,12 @@
   .footer_sci_1_0_0__right {
     width: 100%;
     margin-top: 10px;
+  }
+  .footer_sci_1_0_0__list {
+    font-size: 13px;
+  }
+  .footer_sci_1_0_0__permit {
+    font-size: 13px;
   }
 }
 @media (max-width: 390px) {

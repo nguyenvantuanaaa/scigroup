@@ -1,5 +1,5 @@
 .about_sci_1_0_0 {
-    padding: 40px 0 25px 0;
+    padding: 30px 0 15px 0;
     &__box {
         display: flex;
         flex-wrap: wrap;
@@ -97,6 +97,7 @@
         }
         &__content {
             font-size: 12px;
+            padding: 0;
         }
         &__des {
             font-size: 30px;

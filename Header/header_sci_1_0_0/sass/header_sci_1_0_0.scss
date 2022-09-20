@@ -32,7 +32,7 @@
     }
     &__link {
         font-size: 16px;
-        padding: 38px 0px;
+        padding: 30px 0px;
         display: block;
         font-weight: 600;
         cursor: pointer;
@@ -51,7 +51,7 @@
         transition: all 0.2s linear;
         display: none;
         position: absolute;
-        top: 100px;
+        top: 84px;
         width: 250px;
         background: #fff;
         border-bottom-left-radius: 10px;
@@ -113,8 +113,22 @@
         padding: 5px 20px;
         background-color: white;
         min-width: 110px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.3s linear;
         a {
             color: #0574b3;
+        }
+    }
+    &__vn:hover {
+        background-color: #0574b3;
+        a {
+            color: white;
+        }
+    }
+    &__eng:hover {
+        background-color: #0574b3;
+        a {
+            color: white;
         }
     }
 
@@ -284,6 +298,9 @@
         .container {
             padding-right: 15px;
             padding-left: 15px;
+        }
+        &__link {
+            padding: 0 15px;
         }
     }
 
