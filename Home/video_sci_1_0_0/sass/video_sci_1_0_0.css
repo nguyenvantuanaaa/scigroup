@@ -1,5 +1,5 @@
 .video_sci_1_0_0 {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 .video_sci_1_0_0__pic {
   background-color: #01446b;
@@ -70,11 +70,17 @@
   }
 }
 @media (max-width: 767px) {
+  .video_sci_1_0_0 {
+    padding: 15px 0;
+  }
   .video_sci_1_0_0__text {
-    font-size: 16px;
+    font-size: 14px;
     left: 30px;
     padding: 0 10px;
-    top: 5px;
+    top: 15px;
+  }
+  .video_sci_1_0_0__text b {
+    font-size: 17px;
   }
   .video_sci_1_0_0__pic::after {
     width: 50px;

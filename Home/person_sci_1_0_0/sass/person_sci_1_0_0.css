@@ -79,8 +79,9 @@
     width: 100%;
   }
   .person_sci_1_0_0__header {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 15px;
+    text-align: center;
   }
   .person_sci_1_0_0__tab {
     font-size: 16px;
