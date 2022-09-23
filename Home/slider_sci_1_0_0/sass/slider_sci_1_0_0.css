@@ -19,7 +19,7 @@
   width: 35%;
   margin: 20px auto 0;
   color: white;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media (max-width: 1440px) {
   .slider_sci_1_0_0 {
@@ -42,7 +42,7 @@
     min-height: 398px;
   }
   .slider_sci_1_0_0__title {
-    width: 49%;
+    width: 50%;
   }
 }
 @media (max-width: 767px) {

@@ -111,6 +111,7 @@
   min-width: 110px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all 0.3s linear;
+  border-radius: 5px;
 }
 .header_sci_1_0_0__vn a, .header_sci_1_0_0__eng a {
   color: #0574b3;
