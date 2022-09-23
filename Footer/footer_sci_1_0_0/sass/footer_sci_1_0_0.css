@@ -146,4 +146,9 @@
   .footer_sci_1_0_0__list li {
     padding: 0 5px;
   }
+}
+@media (max-width: 320px) {
+  .footer_sci_1_0_0__list {
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=footer_sci_1_0_0.css.map */

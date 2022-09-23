@@ -157,5 +157,8 @@
         }
     }
     @media (max-width: 320px) {
+        &__list {
+            font-size: 11px;
+        }
     }
 }
