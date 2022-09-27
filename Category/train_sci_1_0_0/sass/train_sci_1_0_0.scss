@@ -1,0 +1,74 @@
+.train_sci_1_0_0 {
+    padding: 20px 0;
+    &__title {
+        font-style: italic;
+        font-weight: 500;
+        color: #444444;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 22px;
+    }
+    &__box {
+        display: flex;
+        gap: 80px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    &__item {
+        width: 32%;
+        padding: 40px 50px;
+        background: #e2ebf4;
+        text-align: center;
+        img {
+            width: 80%;
+            height: auto;
+            display: block;
+        }
+        p {
+            font-weight: 700;
+            color: #444444;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        span {
+            text-align: unset;
+        }
+    }
+    @media (max-width: 1180px) {
+        &__item {
+            padding: 20px;
+        }
+    }
+    @media (max-width: 820px) {
+        &__box {
+            gap: 30px;
+        }
+        &__title {
+            width: 100%;
+        }
+    }
+    @media (max-width: 768px) {
+        &__title {
+            br {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &__title {
+            font-size: 17px;
+        }
+        &__box {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        &__item {
+            width: 100%;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
