@@ -30,9 +30,6 @@
   filter: grayscale(0);
   transform: scale(1.05);
 }
-.service_sci_1_0_0__item:hover .service_sci_1_0_0__text {
-  transform: translateY(100%);
-}
 .service_sci_1_0_0__text {
   min-height: 120px;
   padding: 10px;

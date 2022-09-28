@@ -20,7 +20,7 @@
   padding: 0 60px 0 30px;
 }
 .recruit_sci_1_0_0__item {
-  font-size: 16px;
+  font-size: 22px;
   width: 22%;
   text-align: left;
   color: #fff;
@@ -32,7 +32,7 @@
   bottom: 125px;
 }
 .recruit_sci_1_0_0__line img {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 .recruit_sci_1_0_0__tab1 {
@@ -71,6 +71,12 @@
   .recruit_sci_1_0_0 {
     background-size: cover;
     min-height: 600px;
+  }
+  .recruit_sci_1_0_0__line img {
+    width: 90%;
+  }
+  .recruit_sci_1_0_0__item {
+    font-size: 18px;
   }
 }
 @media (max-width: 1180px) {

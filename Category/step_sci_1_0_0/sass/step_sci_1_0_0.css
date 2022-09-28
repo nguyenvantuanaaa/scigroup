@@ -15,7 +15,7 @@
   justify-content: center;
 }
 .step_sci_1_0_0__item {
-  width: 18%;
+  width: 16%;
   padding: 24px;
   border: 1px solid #cccaca;
   border-radius: 100%;
@@ -31,6 +31,11 @@
 }
 .step_sci_1_0_0__item p {
   margin-top: 10px;
+}
+@media (max-width: 1440px) {
+  .step_sci_1_0_0__item img {
+    width: 18%;
+  }
 }
 @media (max-width: 1180px) {
   .step_sci_1_0_0__box {

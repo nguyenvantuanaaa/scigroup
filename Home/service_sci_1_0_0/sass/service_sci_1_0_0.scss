@@ -29,9 +29,6 @@
                 filter: grayscale(0);
                 transform: scale(1.05);
             }
-            .service_sci_1_0_0__text {
-                transform: translateY(100%);
-            }
         }
     }
     &__text {
@@ -62,7 +59,7 @@
             padding-left: 20px;
             &::before {
                 position: absolute;
-                content: '';
+                content: "";
                 left: 0;
                 bottom: 3px;
                 background: url(../images/service-icon.svg) center 0 no-repeat;
