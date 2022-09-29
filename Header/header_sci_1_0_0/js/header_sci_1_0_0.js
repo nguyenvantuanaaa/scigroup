@@ -19,10 +19,6 @@ window.onscroll = () => {
   scrollFunction();
 };
 
-window.onscroll = () => {
-  scrollFunction();
-};
-
 const scrollFunction = () => {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
     document
