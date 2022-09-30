@@ -435,9 +435,6 @@
   filter: grayscale(0);
   transform: scale(1.05);
 }
-.screen9__item:hover .screen9__text {
-  transform: translateY(100%);
-}
 .screen9__text {
   min-height: 120px;
   padding: 10px;
