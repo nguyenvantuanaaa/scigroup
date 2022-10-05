@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
 }
+.slider_sci_1_0_0__box {
+  -webkit-animation: bounceInDown 1.5s;
+          animation: bounceInDown 1.5s;
+}
 .slider_sci_1_0_0__heading {
   width: 30%;
   margin: 0 auto;
@@ -70,5 +74,27 @@
 @media (max-width: 280px) {
   .slider_sci_1_0_0__title {
     font-size: 10px;
+  }
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=slider_sci_1_0_0.css.map */

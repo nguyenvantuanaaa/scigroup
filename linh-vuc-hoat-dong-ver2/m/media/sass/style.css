@@ -334,6 +334,10 @@
 .screen2__box img {
   width: 35%;
   height: auto;
+  display: block;
+}
+.screen2__detail {
+  margin-top: 10px;
 }
 .screen2__detail p {
   text-align: right;

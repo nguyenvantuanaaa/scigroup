@@ -3,6 +3,9 @@
     min-height: 931px;
     display: flex;
     align-items: center;
+    &__box {
+        animation: bounceInDown 1.5s;
+    }
     &__heading {
         width: 30%;
         margin: 0 auto;
@@ -60,5 +63,15 @@
         &__title {
             font-size: 10px;
         }
+    }
+}
+@keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
