@@ -37,6 +37,15 @@ document.getElementById("submit").addEventListener("click", () => {
       break;
     default:
       fileInput.style.border = "1px solid green";
+      createAPI(
+        nameInput.value,
+        phoneInput.value,
+        emailInput.value,
+        posiInput.value,
+        fileInput.value
+      );
+      modal("Bạn đã gửi CV thành công <br> Chúng tôi sẽ liên lạc đến bạn");
+
       break;
   }
 });
@@ -76,4 +85,19 @@ function is_phonenumber(phonenumber) {
   } else {
     return false;
   }
+}
+
+// Create API
+function createAPI(name, phone, email, position, cv, description) {
+  var raw = `{\r\n \"name\": \"${name}\",\r\n \"phone\": \"${phone}\",\r\n \"email\": \"${email}\",\r\n \"position\": \"${position}\",\r\n \"cv\": \"${cv}\",\r\n \"description\": \"${description}\"\r\n }`;
+
+  var requestOptions = {
+    method: "POST",
+    body: raw,
+  };
+
+  fetch("https://scigroup.com.vn/app/recruit/api/create", requestOptions)
+    .then((response) => response.text())
+    .then((result) => console.log(result))
+    .catch((error) => console.log("error", error));
 }
