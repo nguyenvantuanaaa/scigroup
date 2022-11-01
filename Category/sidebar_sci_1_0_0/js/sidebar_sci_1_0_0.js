@@ -9,23 +9,34 @@ document.getElementById("submit").addEventListener("click", () => {
   switch (key) {
     case nameInput.value !== "":
       modal("Bạn cần điền tên!");
+      nameInput.style.border = "1px solid red";
       break;
     case phoneInput.value !== "":
       modal("Bạn cần điền số điện thoại!");
+      nameInput.style.border = "1px solid green";
+      phoneInput.style.border = "1px solid red";
       break;
     case is_phonenumber(phoneInput.value):
       modal("Số điện thoại của bạn không đúng");
+
       break;
     case emailInput.value !== "":
       modal("Bạn cần điền email!");
+      phoneInput.style.border = "1px solid green";
+      emailInput.style.border = "1px solid red";
       break;
     case posiInput.value !== "":
       modal("Bạn cần điền vị trí ứng tuyển!");
+      emailInput.style.border = "1px solid green";
+      posiInput.style.border = "1px solid red";
       break;
     case fileInput.value !== "":
       modal("Bạn cần điền file đính kèm!");
+      posiInput.style.border = "1px solid green";
+      fileInput.style.border = "1px solid red";
       break;
     default:
+      fileInput.style.border = "1px solid green";
       break;
   }
 });
