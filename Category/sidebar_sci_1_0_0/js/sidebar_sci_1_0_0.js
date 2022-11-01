@@ -3,7 +3,22 @@ const phoneInput = document.getElementsByClassName("phone")[0];
 const emailInput = document.getElementsByClassName("email")[0];
 const posiInput = document.getElementsByClassName("position")[0];
 const fileInput = document.getElementsByClassName("file")[0];
-let description = "";
+
+// Create API
+function createAPI(name, phone, email, position, cv, description) {
+  var raw = `{\r\n \"name\": \"${name}\",\r\n \"phone\": \"${phone}\",\r\n \"email\": \"${email}\",\r\n \"position\": \"${position}\",\r\n \"cv\": \"${cv}\",\r\n \"description\": \"${description}\"\r\n }`;
+  // console.log(raw);
+
+  var requestOptions = {
+    method: "POST",
+    body: raw,
+  };
+
+  fetch("https://scigroup.com.vn/app/recruit/api/create", requestOptions)
+    .then((response) => response.text())
+    .then((result) => console.log(result))
+    .catch((error) => console.log("error", error));
+}
 
 document.getElementById("submit").addEventListener("click", () => {
   const key = false;
@@ -14,7 +29,7 @@ document.getElementById("submit").addEventListener("click", () => {
       break;
     case phoneInput.value !== "":
       modal("Bạn cần điền số điện thoại!");
-      nameInput.style.border = "1px solid green";
+      nameInput.style.border = "1px solid #ccc";
       phoneInput.style.border = "1px solid red";
       break;
     case is_phonenumber(phoneInput.value):
@@ -22,30 +37,31 @@ document.getElementById("submit").addEventListener("click", () => {
       break;
     case emailInput.value !== "":
       modal("Bạn cần điền email!");
-      phoneInput.style.border = "1px solid green";
+      phoneInput.style.border = "1px solid #ccc";
       emailInput.style.border = "1px solid red";
       break;
     case posiInput.value !== "":
       modal("Bạn cần điền vị trí ứng tuyển!");
-      emailInput.style.border = "1px solid green";
+      emailInput.style.border = "1px solid #ccc";
       posiInput.style.border = "1px solid red";
       break;
     case fileInput.value !== "":
       modal("Bạn cần điền file đính kèm!");
-      posiInput.style.border = "1px solid green";
+      posiInput.style.border = "1px solid #ccc";
       fileInput.style.border = "1px solid red";
       break;
     case fileInput.value == "":
-      fileInput.style.border = "1px solid green";
+      fileInput.style.border = "1px solid #ccc";
     default:
       createAPI(
         nameInput.value,
         phoneInput.value,
         emailInput.value,
         posiInput.value,
-        fileInput.value,
-        description
+        "https://facebook.com/huudinh",
+        "Chưa phỏng vấn"
       );
+
       modal("Bạn đã gửi CV thành công <br> Chúng tôi sẽ liên lạc đến bạn");
       document.getElementById("form").reset();
       break;
@@ -89,20 +105,6 @@ function is_phonenumber(phonenumber) {
   }
 }
 
-// Create API
-function createAPI(name, phone, email, position, cv, description) {
-  var raw = `{\r\n \"name\": \"${name}\",\r\n \"phone\": \"${phone}\",\r\n \"email\": \"${email}\",\r\n \"position\": \"${position}\",\r\n \"cv\": \"${cv}\",\r\n \"description\": \"${description}\"\r\n }`;
-
-  var requestOptions = {
-    method: "POST",
-    body: raw,
-  };
-
-  fetch("https://scigroup.com.vn/app/recruit/api/create", requestOptions)
-    .then((response) => response.text())
-    .then((result) => console.log(result))
-    .catch((error) => console.log("error", error));
-}
 // Read API
 const getAPI = async () => {
   const response = await fetch("https://scigroup.com.vn/app/recruit/api/read");
