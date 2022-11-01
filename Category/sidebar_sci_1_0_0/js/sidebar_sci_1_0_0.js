@@ -3,6 +3,7 @@ const phoneInput = document.getElementsByClassName("phone")[0];
 const emailInput = document.getElementsByClassName("email")[0];
 const posiInput = document.getElementsByClassName("position")[0];
 const fileInput = document.getElementsByClassName("file")[0];
+let description = "";
 
 document.getElementById("submit").addEventListener("click", () => {
   const key = false;
@@ -18,7 +19,6 @@ document.getElementById("submit").addEventListener("click", () => {
       break;
     case is_phonenumber(phoneInput.value):
       modal("Số điện thoại của bạn không đúng");
-
       break;
     case emailInput.value !== "":
       modal("Bạn cần điền email!");
@@ -35,17 +35,19 @@ document.getElementById("submit").addEventListener("click", () => {
       posiInput.style.border = "1px solid green";
       fileInput.style.border = "1px solid red";
       break;
-    default:
+    case fileInput.value == "":
       fileInput.style.border = "1px solid green";
+    default:
       createAPI(
         nameInput.value,
         phoneInput.value,
         emailInput.value,
         posiInput.value,
-        fileInput.value
+        fileInput.value,
+        description
       );
       modal("Bạn đã gửi CV thành công <br> Chúng tôi sẽ liên lạc đến bạn");
-
+      document.getElementById("form").reset();
       break;
   }
 });
@@ -101,3 +103,10 @@ function createAPI(name, phone, email, position, cv, description) {
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
 }
+// Read API
+const getAPI = async () => {
+  const response = await fetch("https://scigroup.com.vn/app/recruit/api/read");
+  const data = await response.json();
+  console.log(data.body);
+};
+getAPI();
