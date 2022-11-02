@@ -3,6 +3,7 @@
     min-height: 931px;
     display: flex;
     align-items: center;
+    font-family: var(--primary-font);
     &__box {
         animation: bounceInDown 1.5s;
     }
@@ -12,6 +13,7 @@
         img {
             width: 100%;
             display: block;
+            height: auto;
         }
     }
     &__title {

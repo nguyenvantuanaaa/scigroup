@@ -1,5 +1,6 @@
 .person_sci_1_0_0 {
   padding: 20px 0;
+  font-family: var(--primary-font);
 }
 .person_sci_1_0_0__box {
   display: flex;

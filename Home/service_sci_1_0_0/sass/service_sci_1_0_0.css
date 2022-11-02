@@ -1,5 +1,6 @@
 .service_sci_1_0_0 {
   padding: 20px 0;
+  font-family: var(--primary-font);
 }
 .service_sci_1_0_0__title {
   font-size: 26px;

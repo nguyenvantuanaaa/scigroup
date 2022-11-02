@@ -8,6 +8,7 @@
   background: rgb(35, 134, 199);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   z-index: 20;
+  font-family: var(--primary-font);
 }
 .header_sci_2_0_0__box {
   display: flex;

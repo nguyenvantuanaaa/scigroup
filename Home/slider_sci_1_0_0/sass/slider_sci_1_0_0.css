@@ -3,6 +3,7 @@
   min-height: 931px;
   display: flex;
   align-items: center;
+  font-family: var(--primary-font);
 }
 .slider_sci_1_0_0__box {
   -webkit-animation: bounceInDown 1.5s;
@@ -15,6 +16,7 @@
 .slider_sci_1_0_0__heading img {
   width: 100%;
   display: block;
+  height: auto;
 }
 .slider_sci_1_0_0__title {
   padding-top: 20px;

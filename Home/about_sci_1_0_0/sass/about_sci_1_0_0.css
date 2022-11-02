@@ -1,5 +1,6 @@
 .about_sci_1_0_0 {
   padding: 40px 0 20px 0;
+  font-family: var(--primary-font);
 }
 .about_sci_1_0_0__box {
   display: flex;
@@ -46,12 +47,12 @@
 .about_sci_1_0_0__des {
   font-weight: bold;
   font-size: 65px;
-  font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--secondary-font);
 }
 .about_sci_1_0_0__text {
   font-weight: 600;
   font-size: 17px;
-  font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--secondary-font);
 }
 .about_sci_1_0_0__text-1 {
   text-align: center;

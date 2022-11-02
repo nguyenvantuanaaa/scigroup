@@ -1,5 +1,6 @@
 .news_sci_1_0_0 {
   padding: 20px 0 40px 0;
+  font-family: var(--primary-font);
 }
 .news_sci_1_0_0__title {
   color: #2386c7;
