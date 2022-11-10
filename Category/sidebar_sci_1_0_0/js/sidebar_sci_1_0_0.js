@@ -61,7 +61,6 @@ document.getElementById("submit").addEventListener("click", () => {
         "https://facebook.com/huudinh",
         "Chưa phỏng vấn"
       );
-
       modal("Bạn đã gửi CV thành công <br> Chúng tôi sẽ liên lạc đến bạn");
       document.getElementById("form").reset();
       break;
@@ -84,15 +83,18 @@ function modal(text) {
 </div>
 </div>
 `;
-  document.body.insertAdjacentHTML("afterend", html);
+  document.body.insertAdjacentHTML("beforeend", html);
   const closeBg = document.getElementById("modal-bg");
   const close = document.getElementById("modal-close");
   closeBg.addEventListener("click", () => {
-    document.getElementById("thongbao").style.display = "none";
+    closePopup();
   });
   close.addEventListener("click", () => {
-    document.getElementById("thongbao").style.display = "none";
+    closePopup();
   });
+  const closePopup = () => {
+    document.getElementById("thongbao").remove();
+  };
 }
 
 //checkphone
